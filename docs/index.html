@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AURA Alpaca Crypto Research</title>
+<style>body{font-family:system-ui,-apple-system,Segoe UI,sans-serif;max-width:1100px;margin:40px auto;padding:0 20px;background:#0b1020;color:#eef2ff}a{color:#8ab4ff}.card{background:#151c30;border:1px solid #2b3655;border-radius:14px;padding:24px;margin:18px 0}h1{margin-bottom:8px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}.badge{display:inline-block;padding:5px 10px;border-radius:999px;background:#263451;color:#cbd5e1;font-size:13px}</style>
+</head><body>
+<h1>AURA Alpaca Crypto Research</h1><p>CAURA v0.5.2 strategy validation on Alpaca-supported crypto markets.</p>
+<div class="card"><span class="badge">RESEARCH ONLY</span><h2>Two-track validation</h2><p>The same frozen strategy is evaluated independently through historical backtesting and Alpaca Paper forward testing. No live-money execution is enabled.</p></div>
+<div class="grid">
+<div class="card"><h2>Historical Backtest</h2><p>Deterministic replay of historical Alpaca crypto bars, with documented universe, timeframe, costs, slippage and risk rules.</p><a href="backtest/">Open Backtest Dashboard →</a></div>
+<div class="card"><h2>Paper Forward Test</h2><p>Real-time paper-money observation using Alpaca Paper credentials. No live orders and no production state mutation.</p><a href="forward/">Open Forward-Test Dashboard →</a></div>
+</div>
+<div class="card"><h2>Research rules</h2><ul><li>Freeze strategy before validation.</li><li>Do not optimize parameters on the forward-test period.</li><li>Keep backtest and forward results separate.</li><li>Never expose API keys or secrets in the dashboard.</li></ul></div>
+<p><a href="https://github.com/mpoubot/aura-alpaca-crypto-research">Repository</a></p>
+</body></html>
